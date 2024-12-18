@@ -1,13 +1,7 @@
-"use strict";
-
-
-const objectPrototype  ={
-    getKeys(){
-        return Object.keys(this);
-    }
+const Student = function(name){
+    this.name = name;
 }
 
-const student = Object.create(objectPrototype);
-
-student.name = 'abhishek';
-console.log(student.getKeys());
+Student.prototype.getKeys = function(){
+    return Object.keys(this);
+}
