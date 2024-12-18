@@ -1,7 +1,5 @@
-const Student = function(name){
-    this.name = name;
-}
 
-Student.prototype.getKeys = function(){
+Object.prototype.getKeys = function()
+{
     return Object.keys(this);
 }
